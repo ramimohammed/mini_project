@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <titel> </titel>
+<head>
+    
+<style>
+
+div.scrollmenu {
+    background-color:gray;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+div.scrollmenu a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    text-decoration:italic ;
+}
+
+
+div.scrollmenu a:hover {
+    background-color: white;
+}
+
+</style>
+</head>
+
+
+
+
+<body>
+    
+
+
+<div class="scrollmenu">
+    
+  
+  
+</div>
+
+
+
+
+<h2>Loan page</h2>
+
+  
+
+<form action="/action_page.php">
+  First name:<br>
+  <input type="text" name="firstname" placeholder="Type first name"">
+  <br>
+  Last name:<br>
+  <input type="text" name="lastname" placeholder="Type last name">
+  <br>
+  Email address:<br>
+  <input type="text" name="Emailaddress" placeholder="Type email address">
+  <br>
+  <p>Where you from:</p>
+<input type="radio" name="city" value="male" checked> Iraq<br>
+<input type="radio" name="city" value="male" checked> Syria<br>
+<input type="radio" name="city" value="male" checked> Jorden<br><br>
+<p>Which city do you like:</p>
+<input type="checkbox" name="city1" value="chicago">Chicago
+<br>
+<input type="checkbox" name="city2" value="newyork">New York 
+<br>
+<input type="checkbox" name="city3" value="losangeles">Los Angeles 
+<br><br>
+ <p>Which fruit do you like:</p>
+<select>
+  <option value="pear">Pear</option>
+  <option value="apple">Apple</option>
+  <option value="orange">Orange</option>
+  <option value="banana">Banana</option>
+</select><br>
+
+
+<p>Enter a number and click OK:</p>
+
+<input id="id1" type="number" min="100" max="300" required>
+<button onclick="myFunction()">OK</button>
+
+<p>If the number is less than 100 or greater than 300, an error message will be displayed.</p>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var inpObj = document.getElementById("id1");
+    if (inpObj.checkValidity() == false) {
+        document.getElementById("demo").innerHTML = inpObj.validationMessage;
+    } else {
+        document.getElementById("demo").innerHTML = "Input OK";
+    } 
+} 
+</script>
+  
