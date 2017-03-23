@@ -1,99 +1,78 @@
-<!DOCTYPE html>
 <html>
-    <titel> </titel>
 <head>
-    
-<style>
-
-div.scrollmenu {
-    background-color:gray;
-    overflow: auto;
-    white-space: nowrap;
-}
-
-div.scrollmenu a {
-    display: inline-block;
-    color: black;
-    text-align: center;
-    padding: 20px;
-    text-decoration:italic ;
-}
-
-
-div.scrollmenu a:hover {
-    background-color: white;
-}
-
-</style>
+    <link rel="stylesheet" type="text/css" href="/css.css">
 </head>
-
-
-
-
 <body>
     
+        <ul>
+          <li><span>Home</span></li>
+          <li><a href="Aboutus.html">About us</a></li>
+          <li><a href="calculate.html">Calculate Before Buying</a></li>
+          <li><a href="giftsforhim.html">gifts for him</a></li>
+          <li><a href="giftsforher.html">gifts for her</a></li>
+          <li><a href="contactus.html">contact us</a></li>
+        </ul>
+        
+        <title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 
 
-<div class="scrollmenu">
-    
-  
-  
+        
+            <h2 class="w3-center"><b>Him & Her </b><br><small>For The Best Gifts that Comes from The Heart</small> </h2>
+            
+            <p class="w3-center">
+            We Him&Her strive to achieve our goal, offering every thing which our customers 
+            really want. We try our best to keep an eye on everything related to fashion in order 
+            to closely catch up with the ever changing fashion trend and give our customers the best
+            products. And we aim to develop a team with enegry and innovation.<br><br>
+            </p>
+
+<div class="w3-content" style="max-width:800px;position:relative">
+  <img class="mySlides" src="http://www.giftalove.com/blog/wp-content/uploads/2016/01/birthday-gifts-for-boyfriends1-e1453893655372.jpg" style="width:100%">
+  <img class="mySlides" src="http://14thfebvalentinesday.com/wp-content/uploads/2016/01/happy-valentines-day-greetings-pictures-2016.jpg" style="width:100%">
+  <img class="mySlides" src="https://ready2prints3.s3.amazonaws.com/site_assets/thumbnails/designs/Happy-Anniversary-Bokeh_6857.jpg" style="width:100%">
+  <img class="mySlides" src="https://wpengine.com/wp-content/uploads/2013/12/shutterstock_92861098.jpg" style="width:100%">
+
+  <a class="w3-btn-floating" style="position:absolute;top:45%;left:0" 
+    onclick="plusDivs(-1)"><</a>
+  <a class="w3-btn-floating" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">></a>
 </div>
 
-
-
-
-<h2>Loan page</h2>
-
-  
-
-<form action="/action_page.php">
-  First name:<br>
-  <input type="text" name="firstname" placeholder="Type first name"">
-  <br>
-  Last name:<br>
-  <input type="text" name="lastname" placeholder="Type last name">
-  <br>
-  Email address:<br>
-  <input type="text" name="Emailaddress" placeholder="Type email address">
-  <br>
-  <p>Where you from:</p>
-<input type="radio" name="city" value="male" checked> Iraq<br>
-<input type="radio" name="city" value="male" checked> Syria<br>
-<input type="radio" name="city" value="male" checked> Jorden<br><br>
-<p>Which city do you like:</p>
-<input type="checkbox" name="city1" value="chicago">Chicago
-<br>
-<input type="checkbox" name="city2" value="newyork">New York 
-<br>
-<input type="checkbox" name="city3" value="losangeles">Los Angeles 
-<br><br>
- <p>Which fruit do you like:</p>
-<select>
-  <option value="pear">Pear</option>
-  <option value="apple">Apple</option>
-  <option value="orange">Orange</option>
-  <option value="banana">Banana</option>
-</select><br>
-
-
-<p>Enter a number and click OK:</p>
-
-<input id="id1" type="number" min="100" max="300" required>
-<button onclick="myFunction()">OK</button>
-
-<p>If the number is less than 100 or greater than 300, an error message will be displayed.</p>
-
-<p id="demo"></p>
-
 <script>
-function myFunction() {
-    var inpObj = document.getElementById("id1");
-    if (inpObj.checkValidity() == false) {
-        document.getElementById("demo").innerHTML = inpObj.validationMessage;
-    } else {
-        document.getElementById("demo").innerHTML = "Input OK";
-    } 
-} 
+var slideIndex = 1;
+showDivs(slideIndex);
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
 </script>
-  
+<br>
+<iframe class="film" src="https://www.youtube.com/embed/J5HtSy5bATk" frameborder="0" allowfullscreen="" style="display: inline;"></iframe>
+<iframe class="film" src="https://www.youtube.com/embed/XUDedXMZ4WE" frameborder="0" allowfullscreen="" style="display: inline;"></iframe>
+<iframe class="film" src="https://www.youtube.com/embed/zdPulrRhvS4" frameborder="0" allowfullscreen="" style="display: inline;"></iframe>       
+<iframe class="film" src="https://youtube.com/embed/lECMrhnsYOs" frameborder="0" allowfullscreen="" style="display: inline;"></iframe> 
+<iframe class="film" src="https://www.youtube.com/embed/gJZ-D239OGs" frameborder="0" allowfullscreen="" style="display: inline;"></iframe> 
+
+<p class="w3-center">
+    <strong><small><small>Consumer's benefit is the first and the most important factor in all our jobs. 
+        And this is the reason why we keep focusing on perfecting shopping atmosphere 
+        and user experience. Having fun on Him&her! Best Wishes!</small></small></strong>
+</p>
+<footer>
+  <p>Posted by: Moe's Team</p>
+  <p>Contact information: <a href="Him&Her.com">Him&Her.com</a>.</p>
+</footer>
+
+
+</body>
+</html>
