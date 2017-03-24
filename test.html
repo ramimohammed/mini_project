@@ -1,78 +1,59 @@
 <html>
-<head>
-    <link rel="stylesheet" type="text/css" href="/css.css">
-</head>
+<head></head>
 <body>
-    
-        <ul>
-          <li><span>Home</span></li>
-          <li><a href="Aboutus.html">About us</a></li>
-          <li><a href="calculate.html">Calculate Before Buying</a></li>
-          <li><a href="giftsforhim.html">gifts for him</a></li>
-          <li><a href="giftsforher.html">gifts for her</a></li>
-          <li><a href="contactus.html">contact us</a></li>
-        </ul>
-        
-        <title>W3.CSS</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <h1>Page 4</h1>
+<h3>Simple Calculator</h3>
+<br/>
+<style>
+#calc{width:300px;height:250px;}
+#btn{width:100%;height:40px;font-size:20px;}
+</style>
+<form Name="calc">
+<table id="calc" border=2>
+<tr>
+<td colspan=5><input id="btn" name="display" onkeypress="return event.charCode >= 48 && event.charCode <= 57" type="text"></td>
+<td style="display:none"><input name="M" type="number"></td>
+</tr>
+<tr>
+<td><input id="btn" type=button value="MC" OnClick="calc.M.value=''"></td>
+<td><input id="btn" type=button value="0" OnClick="calc.display.value+='0'"></td>
+<td><input id="btn" type=button value="1" OnClick="calc.display.value+='1'"></td>
+<td><input id="btn" type=button value="2" OnClick="calc.display.value+='2'"></td>
+<td><input id="btn" type=button value="+" OnClick="calc.display.value+='+'"></td>
+</tr>
+<tr>
+<td><input id="btn" type=button value="MS" OnClick="calc.M.value=calc.display.value"></td>
+<td><input id="btn" type=button value="3" OnClick="calc.display.value+='3'"></td>
+<td><input id="btn" type=button value="4" OnClick="calc.display.value+='4'"></td>
+<td><input id="btn" type=button value="5" OnClick="calc.display.value+='5'"></td>
+<td><input id="btn" type=button value="-" OnClick="calc.display.value+='-'"></td>
+</tr>
+<tr>
+<td><input id="btn" type=button value="MR" OnClick="calc.display.value=calc.M.value"></td>
+<td><input id="btn" type=button value="6" OnClick="calc.display.value+='6'"></td>
+<td><input id="btn" type=button value="7" OnClick="calc.display.value+='7'"></td>
+<td><input id="btn" type=button value="8" OnClick="calc.display.value+='8'"></td>
+<td><input id="btn" type=button value="x" OnClick="calc.display.value+='*'"></td>
+</tr>
+<tr>
+<td><input id="btn" type=button value="M+" OnClick="calc.M.value=(Number(calc.M.value))+(Number(calc.display.value))"></td>
+<td><input id="btn" type=button value="9" OnClick="calc.display.value+='9'"></td>
+<td><input id="btn" type=button value="±" 
 
+OnClick="calc.display.value=(calc.display.value==Math.abs(calc.display.value)?-(calc.display.value):Math.abs(calc.display.value))">
 
-        
-            <h2 class="w3-center"><b>Him & Her </b><br><small>For The Best Gifts that Comes from The Heart</small> </h2>
-            
-            <p class="w3-center">
-            We Him&Her strive to achieve our goal, offering every thing which our customers 
-            really want. We try our best to keep an eye on everything related to fashion in order 
-            to closely catch up with the ever changing fashion trend and give our customers the best
-            products. And we aim to develop a team with enegry and innovation.<br><br>
-            </p>
-
-<div class="w3-content" style="max-width:800px;position:relative">
-  <img class="mySlides" src="http://www.giftalove.com/blog/wp-content/uploads/2016/01/birthday-gifts-for-boyfriends1-e1453893655372.jpg" style="width:100%">
-  <img class="mySlides" src="http://14thfebvalentinesday.com/wp-content/uploads/2016/01/happy-valentines-day-greetings-pictures-2016.jpg" style="width:100%">
-  <img class="mySlides" src="https://ready2prints3.s3.amazonaws.com/site_assets/thumbnails/designs/Happy-Anniversary-Bokeh_6857.jpg" style="width:100%">
-  <img class="mySlides" src="https://wpengine.com/wp-content/uploads/2013/12/shutterstock_92861098.jpg" style="width:100%">
-
-  <a class="w3-btn-floating" style="position:absolute;top:45%;left:0" 
-    onclick="plusDivs(-1)"><</a>
-  <a class="w3-btn-floating" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">></a>
-</div>
-
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
-  }
-  x[slideIndex-1].style.display = "block";
-}
-</script>
-<br>
-<iframe class="film" src="https://www.youtube.com/embed/J5HtSy5bATk" frameborder="0" allowfullscreen="" style="display: inline;"></iframe>
-<iframe class="film" src="https://www.youtube.com/embed/XUDedXMZ4WE" frameborder="0" allowfullscreen="" style="display: inline;"></iframe>
-<iframe class="film" src="https://www.youtube.com/embed/zdPulrRhvS4" frameborder="0" allowfullscreen="" style="display: inline;"></iframe>       
-<iframe class="film" src="https://youtube.com/embed/lECMrhnsYOs" frameborder="0" allowfullscreen="" style="display: inline;"></iframe> 
-<iframe class="film" src="https://www.youtube.com/embed/gJZ-D239OGs" frameborder="0" allowfullscreen="" style="display: inline;"></iframe> 
-
-<p class="w3-center">
-    <strong><small><small>Consumer's benefit is the first and the most important factor in all our jobs. 
-        And this is the reason why we keep focusing on perfecting shopping atmosphere 
-        and user experience. Having fun on Him&her! Best Wishes!</small></small></strong>
-</p>
-<footer>
-  <p>Posted by: Moe's Team</p>
-  <p>Contact information: <a href="Him&Her.com">Him&Her.com</a>.</p>
-</footer>
-
-
+</td>
+<td><input id="btn" type=button value="=" OnClick="calc.display.value=eval(calc.display.value)"></td>
+<td><input id="btn" type=button value="/" OnClick="calc.display.value+='/'"></td>
+</tr>
+<tr>
+<td><input id="btn" type=button value="1/x" OnClick="calc.display.value=1/calc.display.value"></td>
+<td><input id="btn" type=button value="." OnClick="calc.display.value+='.'"></td>
+<td><input id="btn" type=button value="x2" OnClick="calc.display.value=Math.pow(calc.display.value,2)"></td>
+<td><input id="btn" type=button value="√" OnClick="calc.display.value=Math.sqrt(calc.display.value)"></td>
+<td><input id="btn" type=button value="C" OnClick="calc.display.value=''"></td>
+</tr>
+</table>
+</form>
 </body>
 </html>
