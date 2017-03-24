@@ -1,0 +1,32 @@
+
+        
+        div.scrollmenu {
+            background-color:#4a496d;
+            overflow: auto;
+            white-space: nowrap;
+        }
+        
+        div.scrollmenu a {
+            display: inline-block;
+            color:white ;
+            text-align: center;
+            padding: 20px;
+            text-decoration:italic ;
+        }
+        
+        
+        div.scrollmenu a:hover {
+            background-color: black;
+        }
+        
+        
+        body { 
+    background-image: url('/pics/rami_bank.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;
+}
+      
+    
+        
