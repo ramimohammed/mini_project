@@ -1,10 +1,10 @@
-
 <!DOCTYPE html>
     <html>
         <titel> </titel>
     <head>
         
-        <link rel="stylesheet" type="text/css" href="/css/page4claculator.css.css">
+         <link rel="stylesheet" type="text/css" href="/css/page3Contact us.css">
+
     </head>
     
     
@@ -19,7 +19,7 @@
           <a href="page1home.html">Home </a>
           <a href="page2Gallery.html"> Gallery</a>
           <a href="page3Contactus.html">Contact Us</a>
-          <a href="page5prodect.html">Our prodect</a>
+          <a href="pics/under con.jpg">Our prodect</a>
           
         </div>
         
@@ -27,13 +27,136 @@
         
         <h2>you are in Calculator page</h2>
         
-        
-        
-             
-         </body>
+      
+      
     
+    
+  <style>  #box {text-align: center}
+
+.button		{
+			
+			border-radius: 10px;
+			width:80px;
+			height: 40px;
+			color: #1f9991; 
+			font-size: 20px;
+			line-height: 40px;
+			background-color:#4a496d;
+			}
+#button_c		{
+			
+			border-radius: 10px;
+			width:80px;
+			height: 40px;
+			color: red; 
+			font-size: 20px;
+			line-height: 40px;
+			background-color: #333;
+			}
+
+
+
+
+				
+   
+    </style>
+
+    
+    
+
+   <!-- This section will have the code for the calculator -->
+    
+    <div id="box">
+        
+      <div class="display"><input type="text" readonly size="28" id="d"></div>
       
       
-         
+      <div>
+       
+
+        <p>
+            <input type="button" id="button_c" value="C" onclick='c("")'>
+          <input type="button" class="button" value="mrc" onclick='c("sorry i dont have memory")'>
+          
+          
+        </p>
+        <p>
+          <input type="button" class="button" value="7" onclick='math("7")'>
+          <input type="button" class="button" value="8" onclick='math("8")'>
+          <input type="button" class="button" value="9" onclick='math("9")'>
+          <input type="button" class="button" value="/" onclick='math("/")'>
+        </p>
+        <p>
+          <input type="button" class="button" value="4" onclick='math("4")'>
+          <input type="button" class="button" value="5" onclick='math("5")'>
+          <input type="button" class="button" value="6" onclick='math("6")'>
+          <input type="button" class="button" value="*" onclick='math("*")'>
+        </p>
+        <p>
+          <input type="button" class="button" value="1" onclick='math("1")'>
+          <input type="button" class="button" value="2" onclick='math("2")'>
+          <input type="button" class="button" value="3" onclick='math("3")'>
+          <input type="button" class="button" value="-" onclick='math("-")'>
+        </p>
+        <p>
+          <input type="button" class="button" value="0" onclick='math("0")'>
+          <input type="button" class="button" value="." onclick='math(".")'>
+          <input type="button" class="button" value="+" onclick='math("+")'>
+          <input type="button" class="button" value="=" onclick='e()'>
+        </p>
+        
+        
+        
+        
+        
+        
+      </div>
+    </div>
+           
+           
+           
+           
+            <script>
+            function c(x)
+            {
+            document.getElementById("d").value=x;
+            }
+            function math(x)
+            {
+            document.getElementById("d").value+=x;
+            }
+            function e()
+            {
+            try
+            {
+            c(eval(document.getElementById("d").value))
+            }
+            catch(e)
+            {
+            c('Error')
+            }
+            }
+            </script>
+    
+
+</body>
+</html>
+
+        
+      
+<body>
+  
+
+
+  
+     </html>
+           
+           
+        
   
   
+  
+
+
+
+

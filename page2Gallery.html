@@ -3,9 +3,82 @@
         <titel> </titel>
     <head>
         
-         <link rel="stylesheet" type="text/css" href="/page2Gallery.css">
+        <style type="text/css">
+            
+        
+        div.scrollmenu {
+            background-color:#4a496d;
+            overflow: auto;
+            white-space: nowrap;
+        }
+        
+        div.scrollmenu a {
+            display: inline-block;
+            color:white ;
+            text-align: center;
+            padding: 20px;
+            text-decoration:italic ;
+        }
+        
+        
+        div.scrollmenu a:hover {
+            background-color: black;
+        }
+        
+        
+        body { 
+    background-image: url('/pics/rami_bank.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;
+}
+      
+    
+  .fa {
+             padding: 10px;
+             font-size: 10px;
+             width: 10px;
+             text-align: right;
+            
+             margin: 5px 2px;
+            
+            }
+            
+            .fa:hover {
+               opacity: 0.7;
+            }
+            
+            .fa-facebook {
+             background: #3B5998;
+             color: white;
+            }
+            
+            .fa-twitter {
+             background: #55ACEE;
+             color: white;
+            }
+            
+            .fa-google {
+             background: #dd4b39;
+             color: white;
+            }
+            
+            
+            .fa-youtube {
+             background: #bb0000;
+             color: white;
+            }
+            
+            .fa-instagram {
+             background: #125688;
+             color: white;
+                      
+                
+                
+              </style>
          
-    </head>
+   </head>
     
     
     
@@ -19,7 +92,7 @@
                   <a href="page1home.html">Home </a>
                   <a href="page3Contactus.html"> Contact Us</a>
                   <a href="page4calculator.html">Calculator</a>
-                  <a href="page5prodect.html">Our prodect</a>
+                  <a href="pics/under con.jpg">Our prodect</a>
                   
                 </div>
                 
@@ -28,85 +101,78 @@
         <h2>you are in Gallery page</h2>
         
 
+<html>
+
+
+
+
 
 <div class="w3-container">
 </div>
 
-    <div class="w3-content" style="max-width:800px">
-      <img class="mySlides" src="http://cdn.moneycrashers.com/wp-content/uploads/2016/04/bank-window-bonus-promotion-918x516.jpg" style="width:68%">
-      <img class="mySlides" src=http://economictimes.indiatimes.com/thumb/msid-52291454,width-640,resizemode-4/slideshows/investments-markets/seven-things-you-must-know-about-bank-nifty.jpg style="width:50%">
-      <img class="mySlides" src=http://decottalaw.com/wp-content/uploads/2016/11/3d_bank_wallpaper-normal.jpg style="width:50%">
-      <img class="mySlides" src=http://homesbykamil.com/wp-content/uploads/2013/02/pre.jpg style="width:65%">
-      <img class="mySlides" src=https://media.ed.edmunds-media.com/non-make/carloan/carloan_412133_600.jpg style="width:60%">
-      <img class="mySlides" src=http://s.hswstatic.com/gif/need-bank-account-1.jpg style="width:60%">
-    </div>
+<div class="w3-content" style="max-width:800px">
+  <img class="mySlides" src="http://cdn.moneycrashers.com/wp-content/uploads/2016/04/bank-window-bonus-promotion-918x516.jpg" style="width:68%">
+  <img class="mySlides" src=http://economictimes.indiatimes.com/thumb/msid-52291454,width-640,resizemode-4/slideshows/investments-markets/seven-things-you-must-know-about-bank-nifty.jpg style="width:50%">
+  <img class="mySlides" src=http://decottalaw.com/wp-content/uploads/2016/11/3d_bank_wallpaper-normal.jpg style="width:50%">
+  <img class="mySlides" src=http://homesbykamil.com/wp-content/uploads/2013/02/pre.jpg style="width:65%">
+  <img class="mySlides" src=https://media.ed.edmunds-media.com/non-make/carloan/carloan_412133_600.jpg style="width:60%">
+  <img class="mySlides" src=http://s.hswstatic.com/gif/need-bank-account-1.jpg style="width:60%">
+</div>
 
 <div class="w3-center">
   <div class="w3-section">
     <button class="w3-button" onclick="plusDivs(-1)">❮Prev</button>
     <button class="w3-button" onclick="plusDivs(1)">Next❯</button>
   </div>
-      <button class="w3-button demo" onclick="currentDiv(1)">1</button> 
-      <button class="w3-button demo" onclick="currentDiv(2)">2</button> 
-      <button class="w3-button demo" onclick="currentDiv(3)">3</button> 
-      <button class="w3-button demo" onclick="currentDiv(4)">4</button> 
-      <button class="w3-button demo" onclick="currentDiv(5)">5</button> 
-      <button class="w3-button demo" onclick="currentDiv(6)">6</button> 
+  <button class="w3-button demo" onclick="currentDiv(1)">1</button> 
+  <button class="w3-button demo" onclick="currentDiv(2)">2</button> 
+  <button class="w3-button demo" onclick="currentDiv(3)">3</button> 
+  <button class="w3-button demo" onclick="currentDiv(4)">4</button> 
+  <button class="w3-button demo" onclick="currentDiv(5)">5</button> 
+  <button class="w3-button demo" onclick="currentDiv(6)">6</button> 
 </div>
 
-        <script>
-        var slideIndex = 1;
-        showDivs(slideIndex);
-        
-        function plusDivs(n) {
-          showDivs(slideIndex += n);
-        }
-        
-        function currentDiv(n) {
-          showDivs(slideIndex = n);
-        }
-        
-        function showDivs(n) {
-          var i;
-          var x = document.getElementsByClassName("mySlides");
-          var dots = document.getElementsByClassName("demo");
-          if (n > x.length) {slideIndex = 1}    
-          if (n < 1) {slideIndex = x.length}
-          for (i = 0; i < x.length; i++) {
-             x[i].style.display = "none";  
-          }
-          for (i = 0; i < dots.length; i++) {
-             dots[i].className = dots[i].className.replace(" w3-red", "");
-          }
-          x[slideIndex-1].style.display = "block";  
-          dots[slideIndex-1].className += " w3-red";
-        }
-        </script>
-    <iframe width="360" height="215" src="https://www.youtube.com/embed/qbTcfDWJyOY" frameborder="0" allowfullscreen></iframe>
-    <iframe width="360" height="215" src="https://www.youtube.com/embed/D8PZbsepmBI" frameborder="0" allowfullscreen></iframe>
-    <iframe width="360" height="215" src="https://www.youtube.com/embed/lI__4IKYNgM" frameborder="0" allowfullscreen></iframe>
-    <iframe width="360" height="215" src="https://www.youtube.com/embed/LQQ0G8nDJpA" frameborder="0" allowfullscreen></iframe>
-    <iframe width="360" height="215" src="https://www.youtube.com/embed/B0cwC_kxiWs" frameborder="0" allowfullscreen></iframe>
-    <iframe width="360" height="215" src="https://www.youtube.com/embed/X2ybW6JijnY" frameborder="0" allowfullscreen></iframe>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-red";
+}
+</script>
+<iframe width="360" height="215" src="https://www.youtube.com/embed/qbTcfDWJyOY" frameborder="0" allowfullscreen></iframe>
+<iframe width="360" height="215" src="https://www.youtube.com/embed/D8PZbsepmBI" frameborder="0" allowfullscreen></iframe>
+<iframe width="360" height="215" src="https://www.youtube.com/embed/lI__4IKYNgM" frameborder="0" allowfullscreen></iframe>
+<iframe width="360" height="215" src="https://www.youtube.com/embed/LQQ0G8nDJpA" frameborder="0" allowfullscreen></iframe>
+<iframe width="360" height="215" src="https://www.youtube.com/embed/B0cwC_kxiWs" frameborder="0" allowfullscreen></iframe>
+<iframe width="360" height="215" src="https://www.youtube.com/embed/X2ybW6JijnY" frameborder="0" allowfullscreen></iframe>
 
 
 
         
         
-         
-    
-     
-     
-     </div>
-      
-      
-            
 
-           
-        
-        
-
-    </body>    
+   </body>    
  
     </html>
           
