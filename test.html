@@ -1,31 +1,83 @@
+Skip to content
+Features Business Explore Pricing
+This repository
+Search
+Sign in or Sign up
+ Watch 0  Star 0  Fork 0 fatimaamer125/miniproject
+ Code  Issues 0  Pull requests 0  Projects 0  Pulse  Graphs
+Branch: master Find file Copy pathminiproject/project/index1.html
+ad0d642  a day ago
+@fatimaamer125 fatimaamer125 project
+1 contributor
+RawBlameHistory     
+74 lines (67 sloc)  2.36 KB
 <!DOCTYPE html>
-<html>
-<body>
-
-<p>Please input a number between 5 and 10:</p>
-
-<input id="demo" type="text">
-<button type="button" onclick="myFunction()">Test Input</button>
-<p id="message"></p>
-
-<script>
-function myFunction() {
-    var message, x;
-    message = document.getElementById("message");
-    message.innerHTML = "";
-    x = document.getElementById("demo").value;
-    try { 
-        if(x == "")  throw "empty";
-        if(isNaN(x)) throw "not a number";
-        x = Number(x);
-        if(x < 5)    throw "too low";
-        if(x > 10)   throw "too high";
+  <html>
+       <head>
+          <title>index1</title>
+               <style>
+        body {
+    background-color: #bfbfbf;
+             }
+        ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+        }
+       li {
+    float: left;
+        }
+       li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+       }
+       li a:hover {
+    background-color: #111;
+       }
+       h1 {
+    color: green;
+       }
+          </style>
+       </head>
+     <body>
+<ul>
+        <li><a class="active" href="agenda.html">Agenda</a></li>
+               <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    <li><a href="calculator.html">Calculate</a></li>
+</ul>
+            <section>
+                <img class="mySlides" src="http://www.jo.sogarab.com/photos/10299.jpg" style="width:95%">
+                  <img class="mySlides" src="http://blog.mathnookarabia.com/wp-content/uploads/2014/03/images3-293x160.jpg"style="width:95%">
+                   <img class="mySlides" src="http://2.bp.blogspot.com/--8e5UmpdQQM/UmdzYNW7-DI/AAAAAAAAADk/XA2EJqb5HBc/s1600/diagnostic_teaching.jpg"style="width:95%">
+            </section>
+        <script>
+var myIndex = 0;
+carousel();
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
     }
-    catch(err) {
-        message.innerHTML = "Input is " + err;
-    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 5000);
 }
 </script>
+<hr>
+  <center> <h1>About The Web :</h1></center>
+          <p>Welcome to the page of mathematics by programming computers in electronic format for all ages ...  </p>
+          <p><h2>Applied mathematics:</h2> concerns itself with mathematical methods that are typically used in science, engineering, business, and industry. Thus, "applied mathematics" is a mathematical science with specialized knowledge. The term applied mathematics also describes the professional specialty in which mathematicians work on practical problems; as a profession focused on practical problems, applied mathematics focuses on the
+"formulation, study, and use of mathematical models" in science, engineering, and other areas of mathematical practice.</p>
 
 </body>
 </html>
+Contact GitHub API Training Shop Blog About
+© 2017 GitHub, Inc. Terms Privacy Security Status Help
