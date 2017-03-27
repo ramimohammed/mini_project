@@ -9,37 +9,18 @@
 
 
 
-<script type="text/javascript" src="">  
-function validateform(){  
-var name=document.myform.name.value;  
-var password=document.myform.password.value;  
-  
-if (name==null || name==""){  
-  alert("Name can't be blank");  
-  return false;  
-}else if(password.length<6){  
-   alert("Password must be at least 6 characters long.");  
-  return false;  
-  }  
-}  
 
 
------------------------------------
 
-<script>  
-function validateemail()  
-{  
-var x=document.myform.email.value;  
-var atposition=x.indexOf("@");  
-var dotposition=x.lastIndexOf(".");  
-if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
-  alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);  
-  return false;  
-  }  
-}  
+    </head>
 
+    
+ <body>
+      
+      
+      
+      <script>  
 
------------------------------------
 
               function myFunction() {
                   var inpObj = document.getElementById("id1");
@@ -51,18 +32,29 @@ if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){
               } 
      
      
-     
+          
+           
+
+
+
+
+function validateform(){  
+      var name=document.myform.name.value;  
+      var password=document.myform.password.value;  
+        
+      if (name==null || name==""){  
+        alert("Name can't be blank");  
+        return false;  
+      }else if(password.length<6){  
+         alert("Password must be at least 6 characters long.");  
+        return false;  
+        }  
+      }  
                
    </script>
-   
-
-
-    </head>
-
+     
     
- <body>
-        
-    
+    <script type="text/javascript" src="/p3.js"></script>
     
         <div class="scrollmenu">
             
@@ -125,58 +117,46 @@ if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){
 
 
 
-  <p>---------------------------------------------------------------------</p>
+  <p>------------------------enter a number and click OK---------------------------------------------</p>
+  
    
+    
               
   <p>---------------------------------------------------------------------</p>  
-           
-
-<form name="myform" method="post" action="http://www.javatpoint.com/javascriptpages/valid.jsp" onsubmit="return validateform()" >  
-Name: <input type="text" name="name"><br/>  
-Password: <input type="password" name="password"><br/>  
-<input type="submit" value="register">  
-</form>  
-
-
-    
-               
-               
-           
-    <p>---------------------------------------------------------------------</p>
-           
-       <p>Enter your email address:</p>
-    <p>this field eccept only email format</p>   
-
-    
-
-
- 
-<form name="myform"  method="post" action="http://www.javatpoint.com/javascriptpages/valid.jsp" onsubmit="return validateemail();">  
-Email: <input type="text" name="email"><br/>  
-  
-<input type="submit" value="register">  
-</form>  
-
+          
+<form name="myForm" action="/action_page_post.php"
+onsubmit="return validateForm()" method="post">
+Name: <input type="text" name="fname">
+<input type="submit" value="Submit">
+</form>
 
 
 
  <p>---------------------------------------------------------------------</p>
 
 
+  <form name="myform" method="post" action="http://www.javatpoint.com/javascriptpages/valid.jsp" onsubmit="return validateform()" >  
+Name: <input type="text" name="name"><br/>  
+Password: <input type="password" name="password"><br/>  
+<input type="submit" value="register">  
+</form>  
+
+<p id="demo"></p>
+  
     
-    <input id="id1" type="number" min="1" max="5" required>
+  
+ -----------------
+ 
+ <input id="id1" type="number" min="1" max="5" required>
     <button onclick="myFunction()">OK</button>
-    
-    <p>Enter a number and click OK:</p>
-    <p>this field eccept only # and it should be from (1 to 5 ) else , an error message will be display.</p>
+    <p id="demo"></p>
+  
+    <p> * this field eccept only # and it should be from (1 to 5 ) else , an error message will be display.</p>
     
   
   
       
       <br> 
-    
-  
-  
   
   
   
