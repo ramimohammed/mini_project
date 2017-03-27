@@ -42,12 +42,18 @@
       <br>
       Email address:<br>
       <input type="text" name="Emailaddress" placeholder="Type email address">
+      
+      
       <br>
-  <p>what account do you have:</p>
-<input type="radio" name="city" value="male" checked> Checking <br>
-<input type="radio" name="city" value="male" checked> Saving<br>
-<input type="radio" name="city" value="male" checked> Investing<br><br>
-   
+      <p>---------------------------------------------------------------------</p>
+          <p>what account do you have:</p>
+        <input type="radio" name="city" value="male" checked> Checking <br>
+        <input type="radio" name="city" value="male" checked> Saving<br>
+        <input type="radio" name="city" value="male" checked> Investing<br><br>
+
+
+  
+    <p>---------------------------------------------------------------------</p> 
     <p>Which Card do you like:</p>
     <input type="checkbox" name="city1" value="Visa">Chicago
     <br>
@@ -56,26 +62,31 @@
     <input type="checkbox" name="city3" value="American Expres">Los Angeles 
     <br><br>
  
- 
+   <p>---------------------------------------------------------------------</p>
 
  
  <p>Which Curency do you like:</p>
-<select>
+ <select>
   <option value="Us Dollars">Us Dollars</option>
   <option value="Iraqi Dinar">Iraqi Dinar</option>
   <option value="British Pound">British Pound</option>
   <option value="Euro">Euro</option>
-</select><br>
+</select><br><br>
 
 
+
+  <p>---------------------------------------------------------------------</p>
     <p>Enter a number and click OK:</p>
+    <p>this field eccept only # and it should be from (1 to 5 ) else , an error message will be display.</p>
     
-    <input id="id1" type="number" min="100" max="300" required>
+    <input id="id1" type="number" min="1" max="5" required>
     <button onclick="myFunction()">OK</button>
     
-    <p>If the number is less than 100 or greater than 300, an error message will be displayed.</p>
     
+    <br> <br>
     <p id="demo"></p>
+      
+    
     
               <script>
               function myFunction() {
@@ -86,7 +97,44 @@
                       document.getElementById("demo").innerHTML = "Input OK";
                   } 
               } 
-              </script>
+               
+               </script>
+    <p>---------------------------------------------------------------------</p>  
+               
+               
+               
+           
+    <p>---------------------------------------------------------------------</p>
+           
+       <p>Enter your email address:</p>
+    <p>this field eccept only email format</p>   
+
+
+<script>  
+function validateemail()  
+{  
+var x=document.myform.email.value;  
+var atposition=x.indexOf("@");  
+var dotposition=x.lastIndexOf(".");  
+if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+  alert("Please enter a valid e-mail address");  
+  return false;  
+  }  
+}  
+</script>  
+  
+<form name="myform"  method="post" action="http://www.javatpoint.com/javascriptpages/valid.jsp" onsubmit="return validateemail();">  
+Email: <input type="text" name="email"><br/>  
+  
+<input type="submit" value="register">  
+</form>  
+
+           
+           
+   
+   
+   
+   
               
    </body>
   
