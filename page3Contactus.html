@@ -33,6 +33,15 @@
      
      
           
+          function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+}
+
+  document.getElementById("d").innerHTML = name        
            
 
 
@@ -42,7 +51,7 @@ function validateform(){
       var name=document.myform.name.value;  
       var password=document.myform.password.value;  
         
-      if (name==null || name==""){  
+      if (name==null || name=="123"){  
         alert("Name can't be blank");  
         return false;  
       }else if(password.length<6){  
@@ -54,7 +63,7 @@ function validateform(){
    </script>
      
     
-    <script type="text/javascript" src="/p3.js"></script>
+    
     
         <div class="scrollmenu">
             
@@ -74,7 +83,7 @@ function validateform(){
       
 <body>
   
- <p>---------------------------------------------------------------------</p>
+ <p>-----------------------------enter your info----------------------------------------</p>
 <form action="/">
   First name:<br>
       <input type="text" name="firstname" placeholder="Type first name"">
@@ -87,7 +96,7 @@ function validateform(){
       
       
       <br>
-      <p>---------------------------------------------------------------------</p>
+      <p>-------------------------choose yor city--------------------------------------------</p>
           <p>what account do you have:</p>
         <input type="radio" name="city" value="male" checked> Checking <br>
         <input type="radio" name="city" value="male" checked> Saving<br>
@@ -95,7 +104,7 @@ function validateform(){
 
 
   
-    <p>---------------------------------------------------------------------</p> 
+    <p>-------------------------choose yor city--------------------------------------------</p> 
     <p>Which Card do you like:</p>
     <input type="checkbox" name="v c" value="Visa card">Chicago
     <br>
@@ -104,7 +113,7 @@ function validateform(){
     <input type="checkbox" name="a e" value="American Expres">Los Angeles 
     <br><br>
  
-   <p>---------------------------------------------------------------------</p>
+   <p>--------------------------choose the curency-------------------------------------------</p>
 
  
  <p>Which Curency do you need:</p>
@@ -118,36 +127,9 @@ function validateform(){
 
 
   <p>------------------------enter a number and click OK---------------------------------------------</p>
-  
    
-    
-              
-  <p>---------------------------------------------------------------------</p>  
-          
-<form name="myForm" action="/action_page_post.php"
-onsubmit="return validateForm()" method="post">
-Name: <input type="text" name="fname">
-<input type="submit" value="Submit">
-</form>
-
-
-
- <p>---------------------------------------------------------------------</p>
-
-
-  <form name="myform" method="post" action="http://www.javatpoint.com/javascriptpages/valid.jsp" onsubmit="return validateform()" >  
-Name: <input type="text" name="name"><br/>  
-Password: <input type="password" name="password"><br/>  
-<input type="submit" value="register">  
-</form>  
-
-<p id="demo"></p>
-  
-    
-  
- -----------------
- 
- <input id="id1" type="number" min="1" max="5" required>
+   
+    <input id="id1" type="number" min="1" max="5" required>
     <button onclick="myFunction()">OK</button>
     <p id="demo"></p>
   
@@ -157,16 +139,33 @@ Password: <input type="password" name="password"><br/>
   
       
       <br> 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+   
+    
+              
+  <p>------------------------------name---------------------------------------</p>  
+         <p id="d"></p> 
+        <form name="myForm" action="/action_page_post.php"
+        onsubmit="return validateForm()" method="post">
+        Name: <input type="text" name="fname">
+        <input type="submit" value="Submit">
+        </form>
+
+
+
+ <p>------------------------------user & pass---------------------------------------</p>
+
+
+          <form name="myform" method="post" action="http://www.javatpoint.com/javascriptpages/valid.jsp" onsubmit="return validateform()" >  
+        Name: <input type="text" name="name"><br/>  
+        Password: <input type="password" name="password"><br/>  
+        <input type="submit" value="register">  
+        </form>  
+        
+        <p id="demo"></p>
+       <p> * you should enter name && 6 dight pass </p>
+        
+ 
+ 
               
    </body>
   
