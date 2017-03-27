@@ -1,5 +1,31 @@
-<html>
-<body>
+<!DOCTYPE html>
+    <html>
+        
+    <head>
+        <titel></titel>
+        
+         <link rel="stylesheet" type="text/css" href="/css/page3Contact us.css">
+
+
+
+
+<script type="text/javascript" src="">  
+function validateform(){  
+var name=document.myform.name.value;  
+var password=document.myform.password.value;  
+  
+if (name==null || name==""){  
+  alert("Name can't be blank");  
+  return false;  
+}else if(password.length<6){  
+   alert("Password must be at least 6 characters long.");  
+  return false;  
+  }  
+}  
+
+
+-----------------------------------
+
 <script>  
 function validateemail()  
 {  
@@ -11,12 +37,167 @@ if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){
   return false;  
   }  
 }  
-</script>  
-<body>  
+
+
+-----------------------------------
+
+              function myFunction() {
+                  var inpObj = document.getElementById("id1");
+                  if (inpObj.checkValidity() == false) {
+                      document.getElementById("demo").innerHTML = inpObj.validationMessage;
+                  } else {
+                      document.getElementById("demo").innerHTML = "Input OK";
+                  } 
+              } 
+     
+     
+     
+               
+   </script>
+   
+
+
+    </head>
+
+    
+ <body>
+        
+    
+    
+        <div class="scrollmenu">
+            
+          
+          <a href="page1home.html">Home </a>
+          <a href="page2Gallery.html"> Gallery</a>
+          <a href="page4calculator.html">Calculator</a>
+          <a href="pics/under con.jpg">Our prodect</a>
+          
+        </div>
+        
+        
+        
+        <h2>you are in Contact Us page</h2>
+        
+        
+      
+<body>
+  
+ <p>---------------------------------------------------------------------</p>
+<form action="/">
+  First name:<br>
+      <input type="text" name="firstname" placeholder="Type first name"">
+      <br>
+      Last name:<br>
+      <input type="text" name="lastname" placeholder="Type last name">
+      <br>
+      Email address:<br>
+      <input type="text" name="Emailaddress" placeholder="Type email address">
+      
+      
+      <br>
+      <p>---------------------------------------------------------------------</p>
+          <p>what account do you have:</p>
+        <input type="radio" name="city" value="male" checked> Checking <br>
+        <input type="radio" name="city" value="male" checked> Saving<br>
+        <input type="radio" name="city" value="male" checked> Investing<br><br>
+
+
+  
+    <p>---------------------------------------------------------------------</p> 
+    <p>Which Card do you like:</p>
+    <input type="checkbox" name="v c" value="Visa card">Chicago
+    <br>
+    <input type="checkbox" name="m c" value="Master Card">New York 
+    <br>
+    <input type="checkbox" name="a e" value="American Expres">Los Angeles 
+    <br><br>
+ 
+   <p>---------------------------------------------------------------------</p>
+
+ 
+ <p>Which Curency do you need:</p>
+ <select>
+  <option value="Us Dollars">Us Dollars</option>
+  <option value="Iraqi Dinar">Iraqi Dinar</option>
+  <option value="British Pound">British Pound</option>
+  <option value="Euro">Euro</option>
+</select><br><br>
+
+
+
+  <p>---------------------------------------------------------------------</p>
+   
+              
+  <p>---------------------------------------------------------------------</p>  
+           
+
+<form name="myform" method="post" action="http://www.javatpoint.com/javascriptpages/valid.jsp" onsubmit="return validateform()" >  
+Name: <input type="text" name="name"><br/>  
+Password: <input type="password" name="password"><br/>  
+<input type="submit" value="register">  
+</form>  
+
+
+    
+               
+               
+           
+    <p>---------------------------------------------------------------------</p>
+           
+       <p>Enter your email address:</p>
+    <p>this field eccept only email format</p>   
+
+    
+
+
+ 
 <form name="myform"  method="post" action="http://www.javatpoint.com/javascriptpages/valid.jsp" onsubmit="return validateemail();">  
 Email: <input type="text" name="email"><br/>  
   
 <input type="submit" value="register">  
 </form>  
-</body>
-</html>
+
+
+
+
+ <p>---------------------------------------------------------------------</p>
+
+
+    
+    <input id="id1" type="number" min="1" max="5" required>
+    <button onclick="myFunction()">OK</button>
+    
+    <p>Enter a number and click OK:</p>
+    <p>this field eccept only # and it should be from (1 to 5 ) else , an error message will be display.</p>
+    
+  
+  
+      
+      <br> 
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+              
+   </body>
+  
+ </html>
+           
+           
+        
+  
+  
+  
+
+
+
+
